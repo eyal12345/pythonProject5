@@ -11,7 +11,7 @@ def solve_cubic_equation(a,b,c,d):
     r = (9*a*b*c - 27*a*a*d - 2*b*b*b)/(54*a*a*a)
     s = math.pow(r + math.sqrt(q*q*q + r*r),1/3)
     t = math.pow(r - math.sqrt(q*q*q + r*r),1/3)
-    x1 = s + t - b/(3*a)
+    x1 = (s + t) - b/(3*a)
     print("x1 = " + str(x1))
     x2 = complex(- 0.5 * (s + t) - b/(3*a), math.sqrt(3)/2 * (s - t))
     print("x2 = " + str(x2))
