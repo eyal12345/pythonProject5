@@ -1,4 +1,5 @@
 from datetime import datetime
+import time
 
 class CustomMap:
     def __init__(self):
@@ -40,6 +41,7 @@ print(d.get(1))
 print(d.get(2))
 print(d.get(3))
 print('')
+time.sleep(1)
 d.set(2,4)
 d.set(3,8)
 print(d.get(1))
